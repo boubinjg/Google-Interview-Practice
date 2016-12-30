@@ -1,0 +1,28 @@
+re given the source to an application which crashes when run. after checking in a debugger,
+it never crashes in the same place. the application is single threaded and uses only the c stl.
+what programming errors could cause the crash. how would you test them?
+
+accessing memory outside of a programs virtual address space
+(segfault)
+
+null pointer exception
+
+array index out of bounds (kind of like the first one)
+
+stack overflow
+
+
+
+How could these be caused?:
+vector resizing while being accessed (such as in a loop)
+
+stack being too small for recursive operations
+
+memory leaks 
+
+other issues:
+randomness, such as use input, time of day input, or random numbers which
+crash the system
+
+uninitialized variables. If the system does not initialize all variables,
+this could lead to crashing.

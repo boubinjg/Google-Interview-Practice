@@ -1,0 +1,52 @@
+How would you test a pen?
+
+Who uses pens?
+students/teachers/office workers/home users
+artists
+
+What do they use pens for?
+
+writing informal notes
+art
+signing/filling out important documents, taking tests
+
+what must pens do?
+write ink in an unbroken line
+ink must dry in a reasonable time to prevent streaking
+(assumption) retract their point
+allow for disassembly to add ink cartridges 
+
+When can pens break?
+when they are stepped on, sat on too vigorusly, 
+crushed by other means
+when they are bent to an extreme
+outside of a reasonable temperature range, ink may boil or freeze
+
+how does a pen break well?
+a pen must not shatter and hurt its user when broken.
+if it breaks, its jagged edges should not be sharp enough to break skin
+its ink cartridge should not break
+ink should be washable incase the cartridge does break. 
+
+How to test the pen:
+
+What pens do:
+create a machine to draw unbroken lines for a large amount of time to see if the pen
+continues writing, and to see if the pen runs out of ink
+
+test drying by using a machine to write a line then attempt to streak the line
+
+create a machine to "click" the pen thousands of times to test point retraction
+
+create a machine that repeatedly disassembles and reassembles a pen with new ink cartridges
+and tests the new cartridge
+
+how pens break:
+
+crush thousands of pens to see if:
+	ink cartridge breaks,
+	pen shatters into dangerous shrapnal
+			
+
+test pens at reasonable/unreasonable temperatures
+test ink for toxicity/washability

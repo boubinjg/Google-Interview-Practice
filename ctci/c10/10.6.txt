@@ -1,0 +1,13 @@
+imagine you have a 20GB file with 1 string per line. How would you sort this file?
+
+Assumptions: unique strings, order is alphabetical (AA comes before AB, AB comes before ABA)
+	     20GB of storage other than the file
+
+You could search through the file in blocks, separating words by first letter. create N other files,
+one for each starting character. sort each file. write each file in order to the new file.
+
+
+//the book says:
+
+do the above but dont create new files. load it in in pieces and save each piece to the new file.
+Then merge the new file.

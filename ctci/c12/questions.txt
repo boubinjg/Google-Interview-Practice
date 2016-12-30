@@ -1,0 +1,26 @@
+1 write a method to print the last k lines of an input file using c++
+
+2 implement a function void reverse(char* str) in c++ which reverses a null-terminated string
+
+3 compare and contrast hash tables and stl map, which works better on a small input
+
+4 how do virtual functions work in c++
+
+5 what is the difference between deep and shallow copy
+
+6 what is the significance of the keyword volitile in c
+
+7 why does a destructor in base class need to be declared virtual
+
+8 write a method that takes a pointer to a Node struct as a parameter and returns
+a complete copy of the passed in data structure. node contains two pointers to other nodes (Binary Tree)
+
+9 write a smart pointer class: a class that uses templates to simulate a pointer and also has
+automatic garbage collection. 
+
+10 write an alligned malloc and free function that supports allocating memory such that the memory
+address returned is divisible by a specific power of two.
+
+11 write a function in C called 2Dalloc which allocates a two dimensional array.
+minimise the number of calls to malloc and make sure that the memory is accessable
+by the notation arr[i][j].

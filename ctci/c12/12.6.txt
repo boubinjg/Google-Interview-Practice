@@ -1,0 +1,15 @@
+in c, what does the volitile keyword do?
+
+The volitile keyword tells the compiler not to optimize anything to do with the volitile variable.
+
+Compilers can use optimization techniques to change when certain instructions are executed.
+This is usually ok, unless we are interfacing with hardware directly mapped to a memory address
+which we are trying to put commands for that hardware into. If the compiler optimizes in such a way
+that the memory address contains different values at different times then when we intended,
+this can cause problems. 
+
+One good example of when a compiler might mess things up is when a loop control variable
+is not modified in a loop body. Even if the variable is modified by the operating system or 
+some other hardware device, the compiler will get rid of it to optimize, assuming the loop is infinite.
+
+

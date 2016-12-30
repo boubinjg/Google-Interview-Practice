@@ -1,0 +1,46 @@
+how do virtual functions work in c++?
+
+virtual functions in c++ allow objects of a subclass of some baseclass to be
+reffered to in pointers to a base class object, and still executed overloaded functions
+as an object of the subclass. 
+
+Imagine we have a base class person
+class Person{
+	...
+	void print()
+	{
+		std::cout<<"im a person<<std::endl;
+	}
+	...
+}
+class Dude : public person{
+	...
+	void print()
+	{
+		std::cout<<"im a dude<<std::endl;
+	}
+	...
+}
+
+imagine we do this:
+
+Dude d;
+Person p;
+d.print();
+p.print();
+
+This will print as expected.
+
+If we did this:
+Dude d;
+Person* p = *d;
+
+p->print();
+
+This will not print anything about dudes. It will use the Person print.
+
+If the functions were virtual,
+
+virtual void print()
+
+This wouldnt happen.

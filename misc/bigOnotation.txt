@@ -1,0 +1,42 @@
+Bachmann-landau notation
+
+big O notation describes the worst case of an algorithm in general terms.
+It can be used to describe either execution time or space used
+
+Examples for big O notation landmarks:
+
+O(1) -> constant time/space
+	executes at the same time or space no matter the input size
+	ex: indexing an array: arr[0];
+
+O(log(n)) -> logarithmic time
+	when the dataset is reduced in size (usually cut in half) after every iteration of the algorithm
+	ex: binary search	
+
+O(n) -> linear time/space
+	An algorithm whos performance grows linearly with respect to input size
+	ex: foreach(thing in things){ 
+	        do thing
+            }
+O(nlog(n)) -> log linear
+	an algorithm with a linear and logarithmic component
+	ex: quicksort
+
+
+O(n^2) -> quadratic time/space
+	algorithm grows at a rate of the input size squared
+	ex: nexted for loops
+
+O(2^n) -> exponential time/space
+	an algorithm whos time/space doubles with each addition to the dataset
+	ex: recursive fibbonacci
+
+big Omega: big Omega describes the best case execution time. 
+	ex: on an unsorted list, quicksort executes in nlogn time, but on a sorted list, quicksort is
+	n^2. This means that quicksort is O(n^2) and big Omega(nlogn).
+	
+
+big Theta: big theta describes asymptotic bounds
+	   ex: an algorithm is big Theta (n) if it performs between i*n and j*n time
+	   big theta basically describes simultaneously the big O and big Omega. 
+

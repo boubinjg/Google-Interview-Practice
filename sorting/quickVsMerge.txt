@@ -1,0 +1,12 @@
+When is Quicksort Worse:
+	If the list to be sorted contains elements which are all equal,
+	quicksort will be O(n^2), as it will always partition on the 
+	pivot it originally chooses, (in my implementation, the left most element).
+	Quicksort can also improve its efficiency by choosing the pivot at random.
+
+When is mergesort Worse:
+	Mergesort requires the program to actually split the list into new lists and store
+	them in memory, while quicksort works in place. By working in place, quicksort is more 
+	memory efficient and has increased locality of reference, and therefore more cache hits.
+	Dispite the algorithms both being O(nlogn), the increased memory efficiency of quicksort
+	produced better performance.

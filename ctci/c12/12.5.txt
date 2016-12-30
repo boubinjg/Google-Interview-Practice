@@ -1,0 +1,8 @@
+What is the difference between deep and shallow copy?
+
+A deep copy of an object copies all of the data from an object into a totally new object.
+You end up with an entirely new copy of an object which can be modified independent of another object.
+
+A shallow copy is simply just another reference to memory shared between the new object and the old object.
+
+

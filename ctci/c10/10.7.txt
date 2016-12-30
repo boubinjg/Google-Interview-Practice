@@ -1,0 +1,15 @@
+given an input file with 4B non-negative ints, find the missing int in the interval. 
+
+4b ints is a lot to store in memory, but you can make a bool array which is .5GB total.
+You can flip each bit corresponding to the number given and then search linearly to find the bit that was
+not flipped.
+
+Do the same thing but with 1b ints and 10mb of memory:
+
+We need to look through the thing twice. First time,
+keep a 1000000 long array of ints. When you pass a value (ex 15),
+find its block (for 15 this would be 0, or n/1000000), and increment the count for that block.
+
+When you are done looking at the array, find the block which has a low count.
+
+Then search that block using the bool vector. 

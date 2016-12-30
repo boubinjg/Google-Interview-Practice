@@ -1,0 +1,16 @@
+bottom up vs top down algorithms:
+
+Top-down (memoizing):
+	also known as stepwise design, taking a system as a while and tearing it apart to view its 
+	smaller subsystems
+	example: calculating fibonacci numbers recursively from the top and storing the 
+	calculated values as the recursion completes instead of calculating the entire tree.
+	
+	-top down algorithms are usually associated with recursion and can be quite inefficient without
+	memoization
+
+bottom-up (dynamic programming):
+	piecing together smaller parts to make a more complex system
+	calculating the Nth fibonacci number by starting from the bottom and calculating up
+
+	-algorithms associated with iteration, often clever iteration or clever brute force

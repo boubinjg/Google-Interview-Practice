@@ -1,0 +1,9 @@
+why does a destructor in a base class need to be virtual
+
+If the destructor is not virtual, only the base object will be deleted.
+If you delete a derived class object through a pointer to its base class,
+only the base class elements will be deleted. this creates a resource leak.
+
+If elements are not deleted polymorphically (as pointers to a base class)
+making the destructor virtual is not necessary, but seems to be heavily suggested.
+

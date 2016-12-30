@@ -1,0 +1,7 @@
+1: find the height of a binary tree
+2: do a preorder traversal
+3: perform a preorder traversal without recursion
+4: find the lowest common ancestor of two nodes in a tree given two nodes
+5: given an unordered binary tree of integers, turn that into a heap made of a balanced binary tree
+6: given an unbalanced BST with more nodes on the left than the right, reorganize the tree to improve its balance while keeping it a BST
+7: six degrees of kevin bacon

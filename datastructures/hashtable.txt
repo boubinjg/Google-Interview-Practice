@@ -1,0 +1,48 @@
+Hash Tables:
+
+Hash tables are data structures used to implement "associative arrays", or a structure which can map "keys" to "values".
+Hash tables have a hash function which assignes each "key" of a data pair to an index of the array. 
+
+Hash table functions:
+	put: inserts an element into a table
+		best case: O(1) -> hashes the key to an empty location
+		worst case: O(n) -> hashes the key to an occupied spot and must search for an empty location
+
+	get: retrieves an element from the hash table
+		best case: O(1) -> value associated with key is at first checked location
+		worst case: 0(n) -> all values hash to the same location
+
+	delete: same as get
+
+Hash Function:
+The hash function takes a key value and turns it into an index for the array. The hash function usually
+uses the key to calculate a number independent of the table size, then mods said number by the table size
+to determine an index
+
+example: key % table_size;
+with an integer key.
+
+size/resize:
+It is suggested that hash tables have prime size. Hash functions which use a prime modulus are less likely to
+have collisions. 
+
+resizing a hash table can be important to keeping its speed up.
+To resize a hash table, it is important to rehash all of the values in the old table to elements of the new table.
+
+collision resolution:
+	Seperate Chaining: 
+		each bucket (or index) is a seperate list of entries. This means that multiple entries can
+		be stored at the same location.
+	
+	Probing (open addressing):
+		each index only holds one key value pair. when an key is hashed to an index which is already full,
+		the entry will move to another index and continue until it finds an empty space.
+
+		linear probing:
+			the hash table looks at the next sequential index 
+		quadratic probing:
+			the interval between probes is calculated by a polynomial function EX: prob# ^2
+		double hashing: 
+			the interval between probes is calculated by a second hash function
+
+

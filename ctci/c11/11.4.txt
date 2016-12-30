@@ -1,0 +1,10 @@
+How would you load test a webpage with no tools?
+
+Create a c++ program which constantly pulls the pages HTML, possibly make a multithreaded version
+of this program.
+
+This would be able to easily test the capabilities of the server, especially if it were massively parallel.
+
+
+without programming languages?:
+yeah, dont

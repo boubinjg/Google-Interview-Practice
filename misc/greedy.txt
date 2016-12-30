@@ -1,0 +1,6 @@
+A greedy algorithm is an algorithm which makes locally optimal decisions at every step.
+
+For example, a greedy strategy for the traveling salesman problem is one that uses the following heuristic:
+at every stage, visit an nvisited city nearest to the current city. 
+
+This solution does not always find the most optimal solution, but will terminate in a reasonable time.

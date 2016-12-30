@@ -1,0 +1,24 @@
+A heap is a variant of a tree which partially orders elements by size. Heaps are
+organized as trees, with all children of any node being either greater (min heap) 
+or less (max heap) than their parent nodes. Heaps can be any kind of tree, but are
+usually binary.
+
+NB: heaps are a good way to implement a priority queue
+
+Heap functions:
+
+insert   O(log n)
+peek max O(1)
+peek min 
+pop max O(1)
+pop min 
+
+
+c++ has some heap functions:
+int std::algorithm, you can use std::make_heap(v.begin(), v.end()) to make a vector a heap.
+you can also std::push_heap(v.begin(), v.end()) to heapify after adding an element.
+
+you can then sort the heap using:
+std::sort_heap(v.begin(), v.end());
+
+

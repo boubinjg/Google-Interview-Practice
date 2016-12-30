@@ -1,0 +1,34 @@
+Linked List:
+a variation on the "list" data structure which holds any value or set of values as "nodes".
+Each node is linked to one or more nodes by pointers, which generates the list structure. 
+
+Advantages over traditional arrays/vectors:
+Because linked lists use pointers to identify the next values in the list, they can point to any locatio in
+memory. This means that you do not need to initially assign memory to the data structure, or resize the memory
+when the structure grows too large.
+
+Disadvantages:
+Linked lists can be complicated to deal with and can be time inefficient compared to vectors or arrays.
+Linked lists also do not allow random access to their data.
+
+Linked List operations:
+
+Insertion: 
+O(1)
+Deletion:
+O(1)
+Traversal:
+O(n)
+access:
+O(n)
+
+Types:
+singly linked-> links go in one direction from the head to the tail and are not circular
+
+doubly linked-> each node links to the node before and after it
+
+Circular -> in a circular list, the last node points not to a null reference but to the head of the list.
+
+Head Nodes:
+Linked lists can have head or sentinel nodes which is a node added before the first data record to 
+better organize the list.

@@ -1,0 +1,110 @@
+Arrays in c++
+Arrays consist of some type of memory allocated in a contiguous block. Each individual value can be referenced 
+by adding an index to a unique identifier. 
+
+Example: int foo[5] = {1,2,3,4,5};
+find the size of an array:
+	int size = (sizeof(foo)/sizeof(*foo));
+
+The C++ standard template library contains a series of template classes for containers.
+Here is the list of containers with a brief description and principle methods
+
+vector:
+	//I use these all the time and understand them
+
+deque (pronounced deck):
+	Double ended queue. Allows elements to be added or removed from either side
+	methods:
+		push_back
+		push_front
+		pop_back
+		pop_front
+		back
+			peek the back element
+		front 
+			peek the front element
+	
+forward_list
+	A singly linked list. good for memory efficient programs
+	
+	functions:
+		push_front
+		pop_front
+		front
+			like peek front
+		remove
+			removes element with specific value
+
+list
+	a doubly linked list.
+	
+	fuctions:
+		push_front
+		push_back
+		front
+		back
+		size
+	
+stack
+	first in last out data structure
+	
+	functions:
+		size
+		top
+		push
+		pop
+queue
+	first in first out data structure
+	
+	functions:
+		size
+		front
+		back
+		push
+		pop
+		
+priority_queue
+	queue that takes a type, container type, and comparator
+	for instance you can make a priority queue of ints, using an int vector, comparing using std::greater.
+	std::priority_queue<int, std::vector<int>, std::greater<int> > queue;
+	
+	custom comparator: 
+		auto cmp = [](int left, int right) {return left < right);};
+		std::priority_queue<int, std::vector<int>, decltype(cmp)> pq(cmp);
+	methods:
+		push
+		pop
+		size
+		top
+			gets the "largest" element depending on your comparator
+set
+	an associative array which holds Key Value pairs. Sets store these pairs in a specific order
+	The objects are stored sorted using a comparison function. Each value must be unique.
+
+	functions:
+		size
+		insert
+		
+	to get an object out of a set, you must iterate over it.
+	
+unordered set
+	basically a hash table. unlike a set, the unordered set stores values in hashed indices in no
+	particular order.
+
+	functions:
+		size
+		find
+		insert
+
+map/unordered map
+	maps work like sets but allow the user to modify the values in place, instead of a set where they must
+	be removed and readded.
+	-unordered maps are likely the best option for hash table like implementations in c++
+
+	functions:
+		find
+		size
+		insert
+
+multi - (map,unordered map, set, unordered set)
+	any of the following data structures but they allow duplicate keys

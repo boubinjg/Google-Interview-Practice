@@ -1,0 +1,19 @@
+we have a method canMoveTo(x,y) which tests if a chess piece can move to a specific position.
+How would you test this?
+
+cases:
+
+correct use:
+	for each piece type (rook, queen, bishop...) see if they can move to valid empty squares
+	as above, see if each piece type can move to occupied squares (takes)
+	
+	check, en passant, pawn pushing
+
+incorrect use:
+	for each piece type, see if a piece can move to a square which is blocked (piece in its path)
+		^ blocked by an enemy piece or friendly piece
+
+	see if a piece can move to a square outside of the bounds of the board (greater than 7 less than 0)
+	
+	see if a piece can move out of blocking check	
+

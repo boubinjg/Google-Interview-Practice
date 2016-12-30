@@ -1,0 +1,33 @@
+trees are an abstract data type used to represent acyclic graphs. Trees are constructed by creating nodes
+which contain values and references to lower nodes, or "children". Trees can also be represented using
+graph data structures such as adjacency lists or adjacency matrices.
+
+Tree types:
+
+binary tree:
+	tree where each node has up to two children
+binary search tree:
+	a binary tree which follows some rule
+		ex: all left descendents are greater than all right descendents
+
+Balanced trees:
+	trees which are "relatively" balanced, meaning that their branches extend to a similar depth
+	in a way such that it takes logn time to search the tree guaranteed. 
+
+tries:
+	trees used to store words. Each node in the tree represents a character or a NULL value which represents
+	that the previous characters are a complete word. Tries can be used to store the entire english language
+	for lookup purposes. While something like a hashtable can tell us if a string is a word, it cant
+	determine whether that word is a prefix of another word. This is why tries are important. 
+traversal:
+
+	in order:
+		left branch -> center -> right
+		
+	pre order:
+		current -> then left and right
+		
+	post order:
+		left and right -> current
+
+	All tree traversal algorithms are O(n)

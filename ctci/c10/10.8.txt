@@ -1,0 +1,5 @@
+you have an array with all the numbers from 1-n where n is at most 32000. you don't know what N is.
+given 4kb of memory, print all duplicate elements.
+
+create a bool array with values from 1-32000, initialized to false. If you see a number, flip the bit.
+If that number's location is true, print it.

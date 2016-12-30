@@ -1,0 +1,15 @@
+in c++ maps work sort of like hashtables, they take a key and a value and map values to some 
+position in an associative array. 
+
+in an map, elements have a specific order, in a general hashtable, order is not necessary. 
+Maps do not allow elements to have similar keys, like a hashtable would.
+
+Maps, unlike hash tables which would usually exist in an array, are red black trees 
+unordered_map is an associative array such as a hash table. Map's ordered quality, imposed by its underlying
+data structure, differs from a usual hashtable implementation.
+
+Map, like a hashtable, allows for in place modification. 
+
+Maps are logn lookup, and insertion. 
+
+hashtables should be constant lookup and insertion. 

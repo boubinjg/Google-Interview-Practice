@@ -1,0 +1,32 @@
+How would you test an ATM:
+
+who uses ATMs?
+customers attempting to withdraw money
+maintenance workers adding money/fixing the machine
+can you deposit? no
+
+what do they do with the machine?:
+customers:
+	insert card
+	type in pin
+	select money to withdraw
+	atm provides money
+	money is removed from users account
+
+when can the machine break?
+crushing/bludgeoning/piercing from someone trying to steal money
+software failure
+bad weather/water damage/extreme high temperatures
+
+how can an atm fail gracefully?:
+software failure should not spit out money
+should be reasonably resistant to attempts to open it unlawfully
+
+how can an ATM fail incorrectly:
+double charge customers
+give customers more money than they can withdraw (over limit or over bank account value)
+charge the wrong account
+
+test for these cases by creating machines to break/test atms physically
+
+design software to make withdrawls which are invalid.

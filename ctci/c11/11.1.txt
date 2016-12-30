@@ -1,0 +1,9 @@
+Find the mistake in this code:
+
+unsigned int i;
+for(i = 100; i >= 0; i--)
+	printf("%d\n", i);
+
+The syntax looks correct. The problem is in the for loop. I is unsigned. That means that it will always
+it will always be less than or equal to 0, even if you subtract 1 from i=0; I will simply loop to 2^32-1,
+and still be greater than 0. This for loop will run forever.
